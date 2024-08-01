@@ -16,9 +16,13 @@ Your data directory requires a sub-directory named 'NBA data - raw' containing s
 
 ## Pre-processing
 
-We perform the data pre-processing in the 'Data_Processing.ipynb' file. This notebook compiles a game-level database of home and away team performances in the previous 5, 10, and 20 games using the 'raw_scores.txt' and 'vegas.txt' files. Game location is available from the Vegas data. Team performance metrics include win rate, average total points/rebounds/assists/turnovers, and average FG%/FT%/FG3% calculated using the Raw Scores data. These features are normalized by season and are used to make predictions on home team point spread for each game. These predictions are benchmarked against the actual game spread available in both data and the average home game spread available in the Vegas data.
+We perform the data pre-processing in the 'Data_Processing.ipynb' file. This notebook compiles a game-level database of home and away team performances in the previous 5, 10, and 20 games using the 'raw_scores.txt' and 'vegas.txt' files. 
 
-Your data directory requires a sub-directory 'NBA data - processed' in which the compiled training, validation, and test features and labels will be exported.
+Game location is available from the Vegas data. 
+
+Team performance features include win rate, average total points/rebounds/assists/turnovers, and average FG%/FT%/FG3% calculated using the Raw Scores data. These features are normalized by season and are used to make predictions on home team point spread for each game. These predictions are benchmarked against the actual game spread available in both data and the average home game spread available in the Vegas data.
+
+Your data directory requires a sub-directory named 'NBA data - processed' in which the compiled training, validation, and test features and labels will be exported.
 
 ## Modeling
 
