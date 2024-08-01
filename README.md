@@ -22,7 +22,7 @@ Game location is available from the Vegas data.
 
 Team performance features include win rate, average total points/rebounds/assists/turnovers, and average FG%/FT%/FG3% calculated using the Raw Scores data. These features are normalized by season and are used to make predictions on home team point spread for each game. These predictions are benchmarked against the actual game spread available in both data and the average home game spread available in the Vegas data.
 
-Your data directory requires a sub-directory named 'NBA data - processed' in which the compiled training, validation, and test features and labels will be exported.
+Your data directory requires a sub-directory named 'NBA data - processed' in which the compiled training, validation, and test features and labels are exported.
 
 ## Modeling
 
