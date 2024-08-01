@@ -16,7 +16,7 @@ Your data directory requires a sub-directory named 'NBA data - raw' containing s
 
 ## Pre-processing and EDA
 
-We perform the data pre-processing in the 'Data_Processing.ipynb' file. This notebook compiles a game-level database of home and away team performances in the previous 5, 10, and 20 games using the 'raw_scores.txt' and 'vegas.txt' files. 
+We perform the data pre-processing and EDA in the 'Data_Processing.ipynb' file. This notebook compiles a game-level database of home and away team performances in the previous 5, 10, and 20 games using the 'raw_scores.txt' and 'vegas.txt' files. 
 
 Game location is available from the Vegas data. 
 
