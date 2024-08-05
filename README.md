@@ -25,5 +25,39 @@ The project focuses on building a machine learning pipeline to predict the point
 ## Recommendations
 
 We strongly suggest using Google Colab to execute the notebook and leveraging a TPU environment for running the code, especially if you plan to train the models yourself. 
+# NBA Game Point Spread Prediction
 
+## Purpose
+
+This project aims to build a machine learning pipeline to predict the point spread for NBA games. Detailed presentations outlining the project's motivation and baseline models are available in the "Baseline PPT: Predicting NBA Game Point Spread.pptx" file and the final presentation file.
+
+## Data
+
+The data was sourced from Kaggle at [Kaggle NBA Odds and Scores](https://www.kaggle.com/datasets/erichqiu/nba-odds-and-scores/data). The dataset is organized with three files per season from the 2012-13 season to the 2018-19 season. The data includes:
+
+1. **raw_scores.txt:** Contains game-level information such as points per quarter, points per overtime, total points, rebounds, assists, turnovers, FG%, FT%, and FG3%. Each game and team is uniquely identified, and the file includes regular season games only.
+2. **vegas.txt:** Provides betting odds from five sportsbooks on moneyline, spread, and over/under bets for regular season games. Each game and team is uniquely identified, matching the IDs in the raw scores data.
+3. **vegas_playoff.txt:** Contains similar information as vegas.txt but for playoff games. This data is excluded from our analysis as the raw scores data does not include playoff games.
+
+The data directory should include a sub-directory named 'NBA data - raw' with sub-directories for each season from '2012-13' to '2018-19'.
+
+## Pre-processing and Exploratory Data Analysis (EDA)
+
+Data pre-processing and EDA are performed in the 'Data_Processing.ipynb' notebook. This process involves:
+
+- Compiling a game-level database of home and away team performances over the previous 5, 10, and 20 games using the raw scores and Vegas data.
+- Calculating team performance features such as win rate, average total points, rebounds, assists, turnovers, FG%, FT%, and FG3%, normalized by season.
+- Using these features to predict the home team point spread for each game, benchmarking predictions against actual game spreads and the average home game spread from the Vegas data.
+
+The processed data is saved in a sub-directory named 'NBA data - processed,' containing the compiled training, validation, and test features and labels.
+
+## Modeling
+
+Details on the experiments performed and the deployment of the final model are specified in the project documentation. The modeling process involves training machine learning models on the pre-processed data and evaluating their performance in predicting the point spread.
+
+## Results
+
+The results section will provide a comprehensive analysis of the model's performance, including metrics and visualizations to demonstrate the effectiveness of the predictions compared to actual game spreads and betting odds.
+
+## Contributions
 
