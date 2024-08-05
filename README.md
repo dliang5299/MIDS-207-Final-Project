@@ -1,8 +1,3 @@
-<p align="center">
-# Predicting NBA Game Point Spread
-</p>
-
-
 # MIDS-207-Final-Project
 
 ## Purpose
