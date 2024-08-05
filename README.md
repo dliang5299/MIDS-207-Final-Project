@@ -1,33 +1,29 @@
-# MIDS-207-Final-Project
+# Predicting NBA Game Point Spread
 
-## Purpose
+Deric Liang, , Dylan Brazier, Zakaria Ali
 
-This project builds a pipeline to build models in an ML framework to predict game spread for NBA games. The baseline presentation for this project is located in the 'Baseline PPT: Predicting NBA Game Point Spread.pptx' file. The final presentation for this project is located in the [INSERT] file. Both presentations contain a more detailed overview of the motivation behind this project.
+## About The Project
 
-## Data
+Convolutional Neural Networks (CNNs) are a class of deep learning models particularly suited for processing structured grid-like data, such as images and videos. They are designed to automatically and adaptively learn spatial hierarchies of features through a series of convolutional layers. Each layer consists of filters that convolve over input data, capturing local patterns and features. CNNs are widely used in tasks such as image classification, object detection, and facial recognition due to their ability to effectively handle spatial relationships and hierarchical patterns within data.
 
-The data was sourced from Kaggle at https://www.kaggle.com/datasets/erichqiu/nba-odds-and-scores/data. This Kaggle page contains a data storage structure that is organized with three data files per season from the 2012-13 season to the 2018-19 season. The Kaggle page states that the data was compiled from "various sources." The three data files available for each season are detailed below:
+## Built With
 
-1. 'raw_scores.txt': Contains information by team and game on points per quarter, points per overtime, total points/rebounds/assists/turnovers, FG%, FT%, FG3%. Each game has a unique ID, each team has a unique ID, and the game date is indicated. This file only contains regular season games.
-2. 'vegas.txt': Contains betting odds by team and game from five sports books on three bets (moneyline, spread, and over/under), as well as averages across the five sports books, for regular season games. Each game has a unique ID and each team has a unique ID matching to the IDs in the Raw Scores data.
-3. 'vegas_playoff.txt': Contains the same information as vegas.txt but for playoff games. Given that the Raw Scores data does not have playoff games, the information from this file type is excluded from our analysis.
+![TensorFlow](https://img.shields.io/badge/TensorFlow-orange)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-yellow)
+![NumPy](https://img.shields.io/badge/NumPy-blue)
+![Pandas](https://img.shields.io/badge/Pandas-purple)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-lightgrey)
 
-Your data directory requires a sub-directory named 'NBA data - raw' containing sub-directories for each season named '2012-13' to '2018-19'.
+## Setup Instructions
 
-## Pre-processing and EDA
+1. **Clone the Repository:** Copy this repository to your local machine.
+2. **Download the Dataset:** Download the dataset from Kaggle [here](https://www.kaggle.com/datasets/erichqiu/nba-odds-and-scores?resource=download).
+3. **Save the Dataset:** Save the `NBA data - processed` file into a folder named `NBA Data`.
+4. **Load the Dataset:** The notebook is configured to load the dataset from the `NBA Data` folder. Ensure that the file path is correct.
+5. **Additional Configuration:** Additional configuration might be needed based on your environment and setup.
 
-We perform the data pre-processing and EDA in the 'Data_Processing.ipynb' file. This notebook compiles a game-level database of home and away team performances in the previous 5, 10, and 20 games using the 'raw_scores.txt' and 'vegas.txt' files. 
+## Recommendations
 
-Game location is available from the Vegas data. 
+We strongly suggest using Google Colab to execute the notebook and leveraging a TPU environment for running the code, especially if you plan to train the models yourself. 
 
-Team performance features include win rate, average total points/rebounds/assists/turnovers, and average FG%/FT%/FG3% calculated using the Raw Scores data. These features are normalized by season and are used to make predictions on home team point spread for each game. These predictions are benchmarked against the actual game spread available in both data and the average home game spread available in the Vegas data.
 
-Your data directory requires a sub-directory named 'NBA data - processed' in which the compiled training, validation, and test features and labels are exported.
-
-## Modeling
-
-[Specify where experiments are performed]. [Specify where final model is deployed].
-
-## Results
-
-## Contributions
