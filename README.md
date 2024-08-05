@@ -4,7 +4,7 @@ Deric Liang, , Dylan Brazier, Zakaria Ali
 
 ## About The Project
 
-Convolutional Neural Networks (CNNs) are a class of deep learning models particularly suited for processing structured grid-like data, such as images and videos. They are designed to automatically and adaptively learn spatial hierarchies of features through a series of convolutional layers. Each layer consists of filters that convolve over input data, capturing local patterns and features. CNNs are widely used in tasks such as image classification, object detection, and facial recognition due to their ability to effectively handle spatial relationships and hierarchical patterns within data.
+The project focuses on building a machine learning pipeline to predict the point spread for NBA games. The data for this project was sourced from Kaggle, comprising various statistics from the 2012-13 to 2018-19 seasons. The dataset includes regular season game scores, betting odds, and other game-related metrics. The data processing involves compiling team performance metrics and normalizing them by season to create a feature set for predictions. The project's objective is to develop and evaluate models that can accurately predict the home team point spread, benchmarking these predictions against actual game spreads and betting odds data.
 
 ## Built With
 
