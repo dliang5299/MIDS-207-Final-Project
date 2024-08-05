@@ -1,4 +1,4 @@
- <p align="center">
+<p align="center">
 # Predicting NBA Game Point Spread
 </p>
 
