@@ -54,5 +54,7 @@ Details on the experiments performed and the deployment of the final model are s
 
 The results section will provide a comprehensive analysis of the model's performance, including metrics and visualizations to demonstrate the effectiveness of the predictions compared to actual game spreads and betting odds.
 
+## Conclusion 
+
 ## Contributions
 
