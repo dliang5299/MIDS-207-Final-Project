@@ -25,11 +25,6 @@ The project focuses on building a machine learning pipeline to predict the point
 ## Recommendations
 
 We strongly suggest using Google Colab to execute the notebook and leveraging a TPU environment for running the code, especially if you plan to train the models yourself. 
-# NBA Game Point Spread Prediction
-
-## Purpose
-
-This project aims to build a machine learning pipeline to predict the point spread for NBA games. Detailed presentations outlining the project's motivation and baseline models are available in the "Baseline PPT: Predicting NBA Game Point Spread.pptx" file and the final presentation file.
 
 ## Data
 
