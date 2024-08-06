@@ -27,7 +27,7 @@ We strongly suggest using Google Colab to execute the notebook and leveraging a 
 
 ## Data
 
-The data was sourced from Kaggle at [Kaggle NBA Odds and Scores](https://www.kaggle.com/datasets/erichqiu/nba-odds-and-scores/data). The dataset is organized with three files per season from the 2012-13 season to the 2018-19 season. The data includes:
+The data was sourced from Kaggle at [here](https://www.kaggle.com/datasets/erichqiu/nba-odds-and-scores?resource=download). The dataset is organized with three files per season from the 2012-13 season to the 2018-19 season. The data includes:
 
 1. **raw_scores.txt:** Contains game-level information such as points per quarter, points per overtime, total points, rebounds, assists, turnovers, FG%, FT%, and FG3%. Each game and team is uniquely identified, and the file includes regular season games only.
 2. **vegas.txt:** Provides betting odds from five sportsbooks on moneyline, spread, and over/under bets for regular season games. Each game and team is uniquely identified, matching the IDs in the raw scores data.
