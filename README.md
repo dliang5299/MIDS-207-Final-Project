@@ -17,7 +17,7 @@ The project focuses on building a machine learning pipeline to predict the point
 
 1. **Clone the Repository:** Copy this repository to your local machine.
 2. **Download the Dataset:** Download the dataset from Kaggle [here](https://www.kaggle.com/datasets/erichqiu/nba-odds-and-scores?resource=download).
-3. **Save the Dataset:** Save the `NBA data - processed` file into a folder named `NBA Data`.
+3. **Save the Dataset:** Save the `NBA data - raw` file into a folder named `NBA Data`.
 4. **Load the Dataset:** The notebook is configured to load the dataset from the `NBA Data` folder. Ensure that the file path is correct.
 5. **Additional Configuration:** Additional configuration might be needed based on your environment and setup.
 
