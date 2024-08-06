@@ -1,6 +1,5 @@
-# Predicting NBA Game Point Spread
-
-Deric Liang, , Dylan Brazier, Zakaria Ali
+<h1 align="center">Predicting NBA Game Point Spread</h1>
+<p align="center">Deric Liang, Dylan Brazier, Zakaria Ali</p>
 
 ## Purpose
 
