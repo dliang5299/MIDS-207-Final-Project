@@ -1,0 +1,34 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error
+
+
+# Feature Importance
+importances = rf_model.feature_importances_
+indices = np.argsort(importances)[::-1]
+top_indices = indices[:10]
+
+# Plot feature importances
+plt.figure(figsize=(12, 8))
+plt.title('Top 10 Feature Importances')
+plt.bar(range(10), importances[top_indices], align='center', color='skyblue')
+plt.xticks(range(10), [X_train.columns[i] for i in top_indices], rotation=90)
+plt.xlabel('Feature')
+plt.ylabel('Importance')
+plt.tight_layout()
+plt.show()
+
+# Errors plot
+errors_train = y_train - y_pred_rf_train
+errors_val = y_val - y_pred_rf_val
+
+plt.figure(figsize=(12, 6))
+plt.scatter(y_train, errors_train, color='blue', label='Train Errors', alpha=0.5)
+plt.scatter(y_val, errors_val, color='red', label='Validation Errors', alpha=0.5)
+plt.hlines(0, min(y_train), max(y_val), colors='k', linestyles='dashed')
+plt.xlabel('True Values')
+plt.ylabel('Prediction Errors')
+plt.title('Prediction Errors vs True Values')
+plt.legend()
+plt.show()
