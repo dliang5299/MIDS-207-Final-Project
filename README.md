@@ -64,14 +64,13 @@ The Kelly Criterion results highlight the returns from the betting strategy base
 | Test | $2,143.70 | 1,230 | 46.6% | $1.74 |
 
 <img src="1.PNG" alt="Kelly Criterion Results" width="400"/>
+<div style="display: flex; justify-content: space-around;">
+    <img src="2.PNG" alt="Experiment Results" width="400"/>
+   
+</div>
 
 ### Experiment Results and Final Model Evaluation
 The following visualizations illustrate the performance of the model during various experiments. These include the impact of learning rate, number of units, and dropout rate on model loss. Additionally, the final model evaluation includes the log loss and accuracy over epochs for both training and validation sets, helping to understand the convergence and generalization of the model.
-
-<div style="display: flex; justify-content: space-around;">
-    <img src="2.PNG" alt="Experiment Results" width="400"/>
-    <img src="3.PNG" alt="Final Model Evaluation" width="400"/>
-</div>
 
 
 ## Conclusion 
