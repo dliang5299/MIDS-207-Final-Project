@@ -73,7 +73,7 @@ The following visualizations illustrate the performance of the model during vari
 ### Final Model Evaluation
 The final model evaluation includes the log loss and accuracy over epochs for both training and validation sets. These metrics help in understanding the convergence and generalization of the model.
 
-<img src="3.PNG" alt="Final Model Evaluation" width="400"/>
+
 
 ## Conclusion 
 
