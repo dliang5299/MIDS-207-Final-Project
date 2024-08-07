@@ -49,9 +49,6 @@ The processed data is saved in a sub-directory named 'NBA data - processed,' con
 
 Details on the experiments performed and the deployment of the final model are specified in the project documentation. The modeling process involves training machine learning models on the pre-processed data and evaluating their performance in predicting the point spread.
 
-#### Final Model Evaluation
-- **Log Loss over Epochs**: Tracks the reduction in log loss during training and validation.
-- **Accuracy over Epochs**: Measures the model's accuracy improvement over time.
 ### ML Modeling - Neural Network
 This section details the model architecture, hyperparameter tuning process, and training methodology.
 
@@ -117,7 +114,11 @@ The following visualizations illustrate the performance of the model during vari
 - **Dropout Rate**: Influence on model regularization.
 - **Heatmap of Log Loss**: Visualizing the interaction between units and learning rate.
 
+#### Final Model Evaluation
+- **Log Loss over Epochs**: Tracks the reduction in log loss during training and validation.
+- **Accuracy over Epochs**: Measures the model's accuracy improvement over time.
 ## Conclusion
+
 - Developed a model to predict NBA game point spreads.
 - Benchmarked predictions against actual game spreads and betting odds.
 - Future work: refining models, exploring additional features, real-time predictions.
