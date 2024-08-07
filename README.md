@@ -53,6 +53,24 @@ Details on the experiments performed and the deployment of the final model are s
 
 The results section will provide a comprehensive analysis of the model's performance, including metrics and visualizations to demonstrate the effectiveness of the predictions compared to actual game spreads and betting odds.
 
+
+### Kelly Criterion
+| Dataset | Total return | Number of games | Percent return | Average return per game |
+|---------|--------------|-----------------|----------------|-------------------------|
+| Baseline - validation | $0 | 1,230 | 0% | $0 |
+| Training | $5,691.82 | 6,104 | 43.9% | $0.93 |
+| Validation | $2,611.47 | 1,230 | 56.8% | $2.12 |
+| Test | $2,143.70 | 1,230 | 46.6% | $1.74 |
+
+![Kelly Criterion Results](1.PNG)
+
+### Experiment Results
+![Experiment Results](2.PNG)
+
+### Final Model Evaluation
+![Final Model Evaluation](3.PNG)
+
+
 ## Conclusion 
 
 ## Contributions
