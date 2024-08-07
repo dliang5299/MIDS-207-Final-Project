@@ -72,11 +72,7 @@ The following visualizations illustrate the performance of the model during vari
     <div style="flex: 1; margin-right: 10px;">
         <img src="2.PNG" alt="Experiment Results" width="400"/>
     </div>
-    <div style="flex: 1; margin-left: 10px;">
-        <img src="3.PNG" alt="Final Model Evaluation" width="400"/>
-    </div>
-</div>
-
+ 
 
 ## Conclusion 
 
