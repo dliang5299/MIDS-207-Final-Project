@@ -55,6 +55,11 @@ The results section will provide a comprehensive analysis of the model's perform
 
 
 ### Kelly Criterion
+The results section provides a comprehensive analysis of the model’s performance, including metrics and visualizations to demonstrate the effectiveness of the predictions compared to actual game spreads and betting odds.
+
+### Kelly Criterion
+The Kelly Criterion results highlight the returns from the betting strategy based on the model's predictions.
+
 | Dataset | Total return | Number of games | Percent return | Average return per game |
 |---------|--------------|-----------------|----------------|-------------------------|
 | Baseline - validation | $0 | 1,230 | 0% | $0 |
@@ -65,9 +70,13 @@ The results section will provide a comprehensive analysis of the model's perform
 ![Kelly Criterion Results](1.PNG)
 
 ### Experiment Results
+The following visualizations illustrate the performance of the model during various experiments. These include the impact of learning rate, number of units, and dropout rate on model loss.
+
 ![Experiment Results](2.PNG)
 
 ### Final Model Evaluation
+The final model evaluation includes the log loss and accuracy over epochs for both training and validation sets. These metrics help in understanding the convergence and generalization of the model.
+
 ![Final Model Evaluation](3.PNG)
 
 
