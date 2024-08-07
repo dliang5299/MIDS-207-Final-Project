@@ -37,7 +37,7 @@ The data directory should include a sub-directory named 'NBA data - raw' with su
 
 ## Pre-processing and Exploratory Data Analysis (EDA)
 
-Data pre-processing and EDA are performed in the 'Data_Processing.ipynb' notebook. This process involves:
+Data pre-processing and EDA are performed in the '01_Data_Processing.ipynb' notebook. This process involves:
 
 - Compiling a game-level database of home and away team performances over the previous 5, 10, and 20 games using the raw scores and Vegas data.
 - Calculating team performance features such as win rate, average total points, rebounds, assists, turnovers, FG%, FT%, and FG3%, normalized by season.
