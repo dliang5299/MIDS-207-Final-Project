@@ -49,6 +49,39 @@ The processed data is saved in a sub-directory named 'NBA data - processed,' con
 
 Details on the experiments performed and the deployment of the final model are specified in the project documentation. The modeling process involves training machine learning models on the pre-processed data and evaluating their performance in predicting the point spread.
 
+#### Final Model Evaluation
+- **Log Loss over Epochs**: Tracks the reduction in log loss during training and validation.
+- **Accuracy over Epochs**: Measures the model's accuracy improvement over time.
+### ML Modeling - Neural Network
+This section details the model architecture, hyperparameter tuning process, and training methodology.
+
+#### Model Architecture
+- **Input Layer**: Features reflecting team performance and game-related statistics.
+- **Hidden Layers**:
+  - Layer 1: 10-300 neurons, 'relu' or 'tanh' activations.
+  - Dropout 1: Rate between 0 and 0.5.
+  - Layer 2: Similar to Layer 1.
+  - Dropout 2: Rate between 0 and 0.5.
+- **Output Layer**: Single neuron to predict the probability that the Vegas spread is covered.
+
+#### Hyperparameter Tuning
+- **Tool Used**: Hyperopt Library.
+- **Tuned Parameters**: Neuron counts, activation functions, dropout rates, learning rate.
+- **Goal**: Achieve the lowest possible validation loss to maximize accuracy.
+
+#### Training Process
+- Consistency from setting seed, trained 15 epochs with batches of 32 samples.
+- Validation phase to prevent overfitting and monitor generalization.
+
+### Justification for Non-Linear ML Approach
+The justification for using a non-linear approach is based on the complex relationships, feature interactions, model performance, and real-world applicability.
+
+#### Key Points
+- **Complex Relationships**: NBA game outcomes involve a complex interplay of features. Linear models may not capture these intricate relationships effectively.
+- **Feature Interactions**: Non-linear models capture interactions between features. Combined effects of team statistics can be non-linear.
+- **Model Performance**: Non-linear models (e.g., Random Forests, Neural Networks) outperform linear models by better capturing non-linear dependencies.
+- **Real-World Applicability**: Real-world relationships between variables are rarely linear. Non-linear approaches lead to better generalization and reliable predictions.
+- 
 ## Results
 
 The results section will provide a comprehensive analysis of the model's performance, including metrics and visualizations to demonstrate the effectiveness of the predictions compared to actual game spreads and betting odds.
@@ -83,38 +116,6 @@ The following visualizations illustrate the performance of the model during vari
 - **Number of Units**: Effect on performance.
 - **Dropout Rate**: Influence on model regularization.
 - **Heatmap of Log Loss**: Visualizing the interaction between units and learning rate.
-#### Final Model Evaluation
-- **Log Loss over Epochs**: Tracks the reduction in log loss during training and validation.
-- **Accuracy over Epochs**: Measures the model's accuracy improvement over time.
-### ML Modeling - Neural Network
-This section details the model architecture, hyperparameter tuning process, and training methodology.
-
-#### Model Architecture
-- **Input Layer**: Features reflecting team performance and game-related statistics.
-- **Hidden Layers**:
-  - Layer 1: 10-300 neurons, 'relu' or 'tanh' activations.
-  - Dropout 1: Rate between 0 and 0.5.
-  - Layer 2: Similar to Layer 1.
-  - Dropout 2: Rate between 0 and 0.5.
-- **Output Layer**: Single neuron to predict the probability that the Vegas spread is covered.
-
-#### Hyperparameter Tuning
-- **Tool Used**: Hyperopt Library.
-- **Tuned Parameters**: Neuron counts, activation functions, dropout rates, learning rate.
-- **Goal**: Achieve the lowest possible validation loss to maximize accuracy.
-
-#### Training Process
-- Consistency from setting seed, trained 15 epochs with batches of 32 samples.
-- Validation phase to prevent overfitting and monitor generalization.
-
-### Justification for Non-Linear ML Approach
-The justification for using a non-linear approach is based on the complex relationships, feature interactions, model performance, and real-world applicability.
-
-#### Key Points
-- **Complex Relationships**: NBA game outcomes involve a complex interplay of features. Linear models may not capture these intricate relationships effectively.
-- **Feature Interactions**: Non-linear models capture interactions between features. Combined effects of team statistics can be non-linear.
-- **Model Performance**: Non-linear models (e.g., Random Forests, Neural Networks) outperform linear models by better capturing non-linear dependencies.
-- **Real-World Applicability**: Real-world relationships between variables are rarely linear. Non-linear approaches lead to better generalization and reliable predictions.
 
 ## Conclusion
 - Developed a model to predict NBA game point spreads.
