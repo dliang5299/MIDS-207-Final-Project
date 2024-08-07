@@ -62,6 +62,13 @@ The Kelly Criterion results highlight the returns from the betting strategy base
 | Training | $5,691.82 | 6,104 | 43.9% | $0.93 |
 | Validation | $2,611.47 | 1,230 | 56.8% | $2.12 |
 | Test | $2,143.70 | 1,230 | 46.6% | $1.74 |
+#### Kelly Criterion Strategy
+- **Idea**: Generates betting strategy (i.e., bet sizing) in gambling context, given a bankroll. Formula based on the probability of a win and odds to return a percentage of the bankroll to wager.
+- **Formula**: \( f* = p - (1-p) / b \)
+  - \( f* \): Percentage of bankroll to wager.
+  - \( p \): Probability of winning the bet.
+  - \( b \): Proportion of the bet gained with a win.
+- **Result**: Allows us to account for confidence in the bet, rather than binary win/lose classification. Generates a strategy to win money over time. The analysis assumes a $100 bankroll available for each game.
 
 ### Experiment Results and Final Model Evaluation
 The following visualizations illustrate the performance of the model during various experiments. These include the impact of learning rate, number of units, and dropout rate on model loss. Additionally, the final model evaluation includes the log loss and accuracy over epochs for both training and validation sets, helping to understand the convergence and generalization of the model.
@@ -71,9 +78,48 @@ The following visualizations illustrate the performance of the model during vari
     <img src="2.PNG" alt="Experiment Results" width="400"/>
 </div>
 
+#### Experiment Results
+- **Learning Rate**: Impact on model loss.
+- **Number of Units**: Effect on performance.
+- **Dropout Rate**: Influence on model regularization.
+- **Heatmap of Log Loss**: Visualizing the interaction between units and learning rate.
+#### Final Model Evaluation
+- **Log Loss over Epochs**: Tracks the reduction in log loss during training and validation.
+- **Accuracy over Epochs**: Measures the model's accuracy improvement over time.
+### ML Modeling - Neural Network
+This section details the model architecture, hyperparameter tuning process, and training methodology.
 
+#### Model Architecture
+- **Input Layer**: Features reflecting team performance and game-related statistics.
+- **Hidden Layers**:
+  - Layer 1: 10-300 neurons, 'relu' or 'tanh' activations.
+  - Dropout 1: Rate between 0 and 0.5.
+  - Layer 2: Similar to Layer 1.
+  - Dropout 2: Rate between 0 and 0.5.
+- **Output Layer**: Single neuron to predict the probability that the Vegas spread is covered.
 
-## Conclusion 
+#### Hyperparameter Tuning
+- **Tool Used**: Hyperopt Library.
+- **Tuned Parameters**: Neuron counts, activation functions, dropout rates, learning rate.
+- **Goal**: Achieve the lowest possible validation loss to maximize accuracy.
+
+#### Training Process
+- Consistency from setting seed, trained 15 epochs with batches of 32 samples.
+- Validation phase to prevent overfitting and monitor generalization.
+
+### Justification for Non-Linear ML Approach
+The justification for using a non-linear approach is based on the complex relationships, feature interactions, model performance, and real-world applicability.
+
+#### Key Points
+- **Complex Relationships**: NBA game outcomes involve a complex interplay of features. Linear models may not capture these intricate relationships effectively.
+- **Feature Interactions**: Non-linear models capture interactions between features. Combined effects of team statistics can be non-linear.
+- **Model Performance**: Non-linear models (e.g., Random Forests, Neural Networks) outperform linear models by better capturing non-linear dependencies.
+- **Real-World Applicability**: Real-world relationships between variables are rarely linear. Non-linear approaches lead to better generalization and reliable predictions.
+
+## Conclusion
+- Developed a model to predict NBA game point spreads.
+- Benchmarked predictions against actual game spreads and betting odds.
+- Future work: refining models, exploring additional features, real-time predictions.
 
 ## Contributions
 
