@@ -124,4 +124,6 @@ The following visualizations illustrate the performance of the model during vari
 - Future work: refining models, exploring additional features, real-time predictions.
 
 ## Contributions
-
+- Deric Liang: Data Processing, EDA.
+- Dylan Brazier: Modeling, Hyperparameter Tuning.
+- Zakaria Ali: Results Analysis, Presentation Preparation.
