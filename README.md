@@ -117,6 +117,7 @@ The following visualizations illustrate the performance of the model during vari
 #### Final Model Evaluation
 - **Log Loss over Epochs**: Tracks the reduction in log loss during training and validation.
 - **Accuracy over Epochs**: Measures the model's accuracy improvement over time.
+
 ## Conclusion
 
 - Developed a model to predict NBA game point spreads.
@@ -124,6 +125,4 @@ The following visualizations illustrate the performance of the model during vari
 - Future work: refining models, exploring additional features, real-time predictions.
 
 ## Contributions
-- Deric Liang: Data Processing, EDA.
-- Dylan Brazier: Modeling, Hyperparameter Tuning.
-- Zakaria Ali: Results Analysis, Presentation Preparation.
+Throughout the project, the team maintained close communication and regularly collaborated on key decisions. Brainstorming sessions were held to refine the project’s direction, and each member provided feedback on each other's work. This collaborative approach ensured that the project was thorough, cohesive, and that all angles were considered in the development of the final models and strategy.
