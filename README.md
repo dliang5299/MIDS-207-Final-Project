@@ -91,7 +91,7 @@ The Kelly Criterion results highlight the returns from the betting strategy base
 | Baseline - validation | $0 | 1,230 | 0% | $0 |
 | Training | $5,691.82 | 6,104 | 43.9% | $0.93 |
 | Validation | $2,611.47 | 1,230 | 56.8% | $2.12 |
-| Test | $2,143.70 | 1,230 | 46.6% | $1.74 |
+| Test | $2,041.75 | 1,226 | 43.6% | $1.67 |
 
 #### Kelly Criterion Strategy
 - **Idea**: Generates betting strategy (i.e., bet sizing) in gambling context, given a bankroll. Formula based on the probability of a win and odds to return a percentage of the bankroll to wager.
