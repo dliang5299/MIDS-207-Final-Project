@@ -105,8 +105,8 @@ The Kelly Criterion results highlight the returns from the betting strategy base
 The following visualizations illustrate the performance of the model during various experiments. These include the impact of learning rate, number of units, and dropout rate on model loss. Additionally, the final model evaluation includes the log loss and accuracy over epochs for both training and validation sets, helping to understand the convergence and generalization of the model.
 
 <div style="display: flex; justify-content: space-around;">
-    <img src="1.PNG" alt="Kelly Criterion Results" width="400"/>
-    <img src="2.PNG" alt="Experiment Results" width="400"/>
+    <img src="Experiments.PNG" alt="Kelly Criterion Results" width="400"/>
+    <img src="Final performance.PNG" alt="Experiment Results" width="400"/>
     <img src="ROC-AUC.png" alt="ROC-AUC" width="400"/>
 </div>
 
