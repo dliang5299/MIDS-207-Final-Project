@@ -33,7 +33,7 @@ The data was sourced from Kaggle [here](https://www.kaggle.com/datasets/erichqiu
 2. **vegas.txt:** Provides betting odds from five sportsbooks on moneyline, spread, and over/under bets for regular season games. Each game and team is uniquely identified, matching the IDs in the raw scores data.
 3. **vegas_playoff.txt:** Contains similar information as vegas.txt but for playoff games. This data is excluded from our analysis as the raw scores data does not include playoff games.
 
-The data directory should include a sub-directory named 'NBA data - raw' with sub-directories for each season from '2012-13' to '2018-19'.
+The data directory should include a sub-directory named `NBA data - raw` with sub-directories for each season from `2012-13` to `2018-19`.
 
 ## Pre-processing and Exploratory Data Analysis (EDA)
 
@@ -109,18 +109,18 @@ The following visualizations illustrate the performance of the model during vari
 </div>
 
 #### Experiment Results
-- **Learning Rate**: Impact on model loss.
-- **Number of Units**: Effect on performance.
-- **Dropout Rate**: Influence on model regularization.
+- **Learning Rate**: 0.01 minimizes model loss.
+- **Number of Units**: 230 neurons in layer 1, 30 neurons in layer 2.
+- **Dropout Rate**: Rate of 0.5 prevents overfitting.
 - **Heatmap of Log Loss**: Visualizing the interaction between units and learning rate.
 
 #### Final Model Evaluation
-- **Log Loss over Epochs**: Tracks the reduction in log loss during training and validation.
-- **Accuracy over Epochs**: Measures the model's accuracy improvement over time.
+- **Log Loss over Epochs**: Tracks the reduction in log loss during training and validation. Demonstrates rapid learning and no overfitting concerns.
+- **Accuracy over Epochs**: Measures the model's accuracy improvement over time; results in slight improvement (~3%) over the baseline.
 
 ## Conclusion
 
-- Developed a model to predict NBA game point spreads.
+- Developed a model to predict NBA game point spreads, likelihood of covering the Vegas spread, and put forth a betting strategy using Kelly Criterion.
 - Benchmarked predictions against actual game spreads and betting odds.
 - Future work: refining models, exploring additional features, real-time predictions.
 
