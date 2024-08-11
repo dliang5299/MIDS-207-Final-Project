@@ -107,6 +107,7 @@ The following visualizations illustrate the performance of the model during vari
 <div style="display: flex; justify-content: space-around;">
     <img src="1.PNG" alt="Kelly Criterion Results" width="400"/>
     <img src="2.PNG" alt="Experiment Results" width="400"/>
+    <img src="ROC-AUC.PNG" alt="ROC-AUC" width="400"/>
 </div>
 
 #### Experiment Results
