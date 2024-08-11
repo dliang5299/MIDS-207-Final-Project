@@ -133,6 +133,7 @@ Throughout the project, the team maintained close communication and regularly co
 | Data selection | Zakaria Ali |
 | Data processing | Deric Liang |
 | EDA | Dylan Brazier |
-| Modeling | Dylan Brazier, Deric Liang |
+| Modeling | Deric Liang, Dylan Brazier |
+| Kelly Criterion Implementation | Deric Liang |
 | Slides | Zakaria Ali, Dylan Brazier, Deric Liang |
 | Report | Zakaria Ali |
