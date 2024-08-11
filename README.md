@@ -92,6 +92,7 @@ The Kelly Criterion results highlight the returns from the betting strategy base
 | Training | $5,691.82 | 6,104 | 43.9% | $0.93 |
 | Validation | $2,611.47 | 1,230 | 56.8% | $2.12 |
 | Test | $2,143.70 | 1,230 | 46.6% | $1.74 |
+
 #### Kelly Criterion Strategy
 - **Idea**: Generates betting strategy (i.e., bet sizing) in gambling context, given a bankroll. Formula based on the probability of a win and odds to return a percentage of the bankroll to wager.
 - **Formula**: \( f* = p - (1-p) / b \)
@@ -126,3 +127,12 @@ The following visualizations illustrate the performance of the model during vari
 
 ## Contributions
 Throughout the project, the team maintained close communication and regularly collaborated on key decisions. Brainstorming sessions were held to refine the project’s direction, and each member provided feedback on each other's work. This collaborative approach ensured that the project was thorough, cohesive, and that all angles were considered in the development of the final models and strategy.
+
+| Task | Contributors |
+|---------|--------------|
+| Data selection | Zakaria Ali |
+| Data processing | Deric Liang |
+| EDA | Dylan Brazier |
+| Modeling | Dylan Brazier, Deric Liang |
+| Slides | Zakaria Ali, Dylan Brazier, Deric Liang |
+| Report | Zakaria Ali |
