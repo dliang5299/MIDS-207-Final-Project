@@ -138,5 +138,3 @@ Throughout the project, the team maintained close communication and regularly co
 | Kelly Criterion Implementation | Deric Liang |
 | Slides | Zakaria Ali, Dylan Brazier, Deric Liang |
 | Report | Zakaria Ali |
-
-### Adding Feedback!
