@@ -122,7 +122,7 @@ The following visualizations illustrate the performance of the model during vari
 
 ## Conclusion
 
-- Developed a model to predict NBA game point spreads, likelihood of covering the Vegas spread, and put forth a betting strategy using Kelly Criterion.
+- Developed a model to predict NBA game point spreads, likelihood of covering the Vegas spread, and put forth a betting strategy using Kelly Criterion. Resulted in ~45% return on test data.
 - Benchmarked predictions against actual game spreads and betting odds.
 - Future work: refining models, exploring additional features, real-time predictions.
 
